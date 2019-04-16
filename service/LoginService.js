@@ -1,4 +1,4 @@
-const jwtService = require('./JwtService');
+const jwtService = require('../util/JwtService');
 
 const USUARIO = 'lin';
 const SENHA = '123456';
