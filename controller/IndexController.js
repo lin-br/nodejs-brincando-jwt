@@ -12,7 +12,7 @@ router.get('/', (request, response) => {
 
         IndexService.index(token);
 
-        response.json('{"sistema":"Disse olá!"}');
+        response.json({"sistema": "Disse olá!"});
     } else {
         response.status(401).send();
     }
