@@ -6,7 +6,7 @@ class IndexService {
         try {
             return jwtService.verificarJwt(token);
         } catch (e) {
-            console.log(e);
+            console.log(e.message);
             return null;
         }
     }

@@ -10,12 +10,14 @@ router.get('/', (request, response) => {
 
         let token = headerAuthorization ? headerAuthorization.replace('Bearer ', '') : headerXAccessToken;
 
-        IndexService.index(token);
+        if (IndexService.index(token)) {
+            response.json({"sistema": "Disse olá!"});
+        }
 
-        response.json({"sistema": "Disse olá!"});
-    } else {
-        response.status(401).send();
+        response.status(401).send()
     }
+
+    response.status(401).send();
 });
 
 module.exports = router;
