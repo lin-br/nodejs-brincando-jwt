@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-brincando-jwt",
+  "version": "1.0.0",
+  "description": "Brincando com JWT no NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lin-br/nodejs-brincando-jwt.git"
+  },
+  "author": "Wesley Ribeiro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lin-br/nodejs-brincando-jwt/issues"
+  },
+  "homepage": "https://github.com/lin-br/nodejs-brincando-jwt#readme",
+  "dependencies": {
+    "express": "4.16.4"
+  }
+}
